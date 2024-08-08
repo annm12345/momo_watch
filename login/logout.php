@@ -1,0 +1,9 @@
+<?php
+    require('../connection.php');
+    require('../function.php');
+    unset($_SESSION['USER_LOGIN']);
+    unset($_SESSION['USER_EMAIL']);
+    unset($_SESSION['USER_ID']);
+    header('location:login.php');
+    die();
+?>
